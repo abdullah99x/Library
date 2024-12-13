@@ -1,442 +1,941 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <!--========== File CSS =========-->
-    <link rel="stylesheet" href="style.css">
-
-    <!--========== File BootStrap 5 ==========-->   
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <!--========== Render Page ==========-->
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <!--=========== ICONS ===========-->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Library</title>
-</head>
-<body>
+/* ===== GOOGLE FONTS ===== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --main-transition: 0.3s;
+    --main-color: #faeb89;  /*Logo Color For All Main*/
+    --description-color:#c7c7c7;  /* description Color*/
+    --main2-color:  #3C6A77;     /*#3346b5;*/
+}
 
 
+/* Start Global Rules */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #EEEEEE;
+    font-family: 'Poppins', sans-serif;
+    }
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
 
 
-<!-- أتنين هيدر  -->
-<!-- Start Header-Top -->
-<div class="header-top">
-    <div class="container">
-        <!-- اللوجو  -->
-        <div class="logo">
-            <a href="#"><img src="imgs/it2.png" alt=""></a>
-        </div>
-        <!-- علامة السيرش اللي في النص -->
-        <form>
-            <input class="input" type="search" placeholder="Search For Mora Than 10,000 Books">
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </form>
-        <!-- infor ===> information -->
-        <div class="infor">
-            <a href="#">
-                <i class="fa-solid fa-phone"></i>
-                +980-34984089</a>
+/* Container ----------------------------   */
+
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+
+
+/* End Global Rules */
+
+/*======================================================================================*/
+
+            /* /*=======     CLASS     ========           */
+
+            .section{
+                margin-top: 60px;
+            }
             
-            <a href="#">
-                <i class="fa-solid fa-envelope"></i>
-                itlibrary@gmail.com</a>
-        </div>
-    </div>
-</div>
-<!-- Start Header-Bottom -->
-<div class="header-bottom">
-    <div class="container">
-        <nav>
-            <i class="fa-solid fa-bars toggle-menu"></i>
-            <ul>
-                <li><a href="#home" class="active">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#menu">Books</a></li>
-                <!-- <li><a href="#">Testimonials</a></li> -->
-                <li><a href="#staff">Staff</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="icons">
-            <a href="account-page/login.html" class="user"><i class="fa-solid fa-user"></i></a>
-            <a href="#" class="heart"><i class="fa-solid fa-heart"></i></a>
-            <a href="#" class="shopping"><i class="fa-solid fa-cart-shopping"></i></a>
-            </div>
-        </div>
-</div>
-
-<!-- End Header -->
-
-
-
-
-
-            <!--========== Home ==========-->
-
-
-<section class="home-section" id="home">
-
-    <div class="background">
-    </div>
-
-    <div class="content">
-        <img src="imgs/logo.png" alt="Logo" class="logo">
-        <h1>Welcome To IT Library</h1>
-        <p>The IT library offers resources for learning and innovation in computer science and technology.</p>
-        <a href="#about"><i class='bx bx-down-arrow-circle' ></i> About Us</a>
-    </div>
-
-</section>
-
-
-<!-- End Home -->
-
-
-
-
-
-            <!--========== ABOUT ==========-->
-
-
-            <section class="about-section" id="about">
+            .section-subtitle {        
+                text-align: center;
+                color: black;
+                font-weight: 600;
+                margin-top: 35px;
+                }
             
-            <h2 class="section-title">About us</h2>
-
-            <div class="container">
-
-
-
-                    <div class="about-data">
-                        <h2 class="about-title">The Bigest Library in  <br> Borg Al-Arab</h2>
-                        <p class="about-description">Welcome to our IT Library, your go-to resource for computer science, software development, and technology-related materials. 
-                            We aim to support learners and professionals with valuable resources to enhance their skills and knowledge in the tech world.
-                            Whether you're starting your journey or looking to expand your expertise, our library has something for you.
-                            .</p>
-                        <a href="#about" class="button">Explore history</a>
-                    </div>
-                    <div>
-                        <img src="imgs/logoDarkWithoutBachGround2.png" alt="" class="about-img">
-                    </div>
-
-
-            </div>
-            </section>
-
-
-
-<hr class="hr1">
-
-
-
-<!-- Start Services -->
-<div class="services" id="services">
-    <div class="text">
-        <h2>Our <span>Services</span></h2>
-    </div>
-    <div class="container">
-        <div class="box-holder">
-            <div class="box">
-                <img src="imgs/book-solid-24.png" alt="s1">
-                <h2>Book Sales</h2>
-                <p>Physical and digital books, Local and international shipping.</p>
-            </div>
-            <div class="box">
-                <img src="imgs/layer-plus-regular-24.png" alt="s2">
-                <h2>Subscription Plans</h2>
-                <p>Unlimited access to a curated collection of e-books for a monthly fee.</p>
-            </div>
-            <div class="box">
-                <img src="imgs/hard-hat-solid-24.png" alt="s3">
-                <h2>Workshops</h2>
-                <p>Training sessions or workshops based on book content.</p>
-            </div>
-            <div class="box">
-                <img src="imgs/world-regular-24.png" alt="s1">
-                <h2>Translation Services</h2>
-                <p>Providing translated versions of essential programming books.</p>
-            </div>
-            <div class="box">
-                <img src="imgs/star-half-solid-24.png" alt="s1">
-                <h2>Reviews and Ratings</h2>
-                <p>A platform for readers to review and rate books.</p>
-            </div>
-            <div class="box">
-                <img src="imgs/discount-solid-24.png" alt="s1">
-                <h2>Discounts</h2>
-                <p>Special offers or discounts on bestselling titles.</p>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End Servcies -->
-<!-- --------------------------------------------------------------------------------------- -->
-
-
-
-
-
-<hr class="hr1">
-
-
-
-
-
-
-
-            <!--========== MENU ==========-->
-
-            <section class="menu-section" id="menu">
-
-                <!-- <p class="menu-subtitle">Buy Now</p> -->
-                <h2 class="section-title">Our Books</h2>
-
-                <div class="menu-container">
-
-                    <div class="menu-card">
-                        <img src="imgs/py.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$22.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/php.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$12.00</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-                    
-                    <div class="menu-card">
-                        <img src="imgs/js.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-                    
-                    <div class="menu-card">
-                        <img src="imgs/c.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/react.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/cpp.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/ai.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/html.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/machineLearninng.jpg" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/arduino.jpg" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/java.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                    <div class="menu-card">
-                        <img src="imgs/android.png" alt="" class="menu__img">
-                        <h3 class="menu-name">Book EGY</h3>
-                        <span class="menu-detail">In Stock</span>
-                        <span class="menu-price">$9.50</span>
-                        <a href="#" class="button menu__button"><i class='bx bx-cart-alt'></i></a>
-                    </div>
-
-                </div>
-
-                <div class="menu-more">
-                    <a href="#" class="menu-more-button">More Books</a>
-                </div>
-
-            </section>
-
-<!-- end Of Books -->
-<!-- ----------------------------------------------------------------------------------------- -->
-
-
-
-
-
-            <hr class="hr1">
-
-
-
-            <section class="staff-section" id="staff">
-                <h2 class="section-title">Our Staff </h2>
-            <div class="card-container">
-
-
-                <div class="card">
-                <img class="staff-img" src="imgs/Abdullah.jpg" alt="Matthew Foster">
-                <h2>Abdullah Mohamed</h2>
-                <p>Library Manager</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/abdallah amr.JPG" alt="Artur Dichter">
-                <h2>Abdallah Amr</h2>
-                <p>Technology Officer</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/abdulrhman mustafa.jpg" alt="Artur Dichter">
-                <h2>Abdulrhman Mustafa</h2>
-                <p>Librarian</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/mohamed soliman.jpg" alt="Artur Dichter">
-                <h2>Mohamed Soliman</h2>
-                <p>Circulation Officer</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/osama ali.jpg" alt="Artur Dichter">
-                <h2>Osama Ali</h2>
-                <p>Cataloging Officer</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/mohamed abdelhamed.png" alt="Artur Dichter">
-                <h2>Mohamed Abdelhamed</h2>
-                <p>Reference Specialist</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/mahmoud arfa.png" alt="Artur Dichter">
-                <h2>Mahmoud Arfa</h2>
-                <p>Maintenance Officer</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/hagar taha.jpg" alt="Artur Dichter">
-                <h2>Hagar Taha</h2>
-                <p>Digitalization Specialist</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/aya mokhtar.jpg" alt="Artur Dichter">
-                <h2>Aya Mokhtar</h2>
-                <p>Public Relations Officer</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/nada mohamed.jpg" alt="Artur Dichter">
-                <h2>Nada Mohamed</h2>
-                <p>Activities Coordinator</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/mariam omar.jpg" alt="Artur Dichter">
-                <h2>Mariam Medhat</h2>
-                <p>Procurement Officer</p>
-                </div>
-
-                <div class="card">
-                <img class="staff-img" src="imgs/shimaa mohamed.jpg" alt="Artur Dichter">
-                <h2>Shimaa Mohamed</h2>
-                <p>Archiving Officer</p>
-                </div>
-            </div>
-            </section>
-
-
-
-
-
-
-
-
-            <hr class="hr1">
-
-
-
-
-
-
-
-            
-            <hr class="hr1">
-
-
-
-
-
-            <section class="contact-section container" id="contact">
-                <div class="contact__container">
-                    <div class="contact__data">
-                        <span class="contact-subtitle">Let's talk</span>
-                        <h2 class="contact-title">Contact us</h2>
-                        <p class="contact-description">If you want to reserve a table in our restaurant, contact us and we will attend you quickly, with our 24/7 chat service.</p>
-                    </div>
-
-                    <div class="contact__button">
-                        <a href="contact-page/index.html" class="button">Contact us now</a>
-                    </div>
-                </div>
-            </section>
-
-
-
-
-
-
-
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="js/js.js"></script>
-
-</body>
-</html>
+            .section-title {        
+                    text-align: center;
+                    font-size: 50px;
+                    font-weight: 700;
+                    color: var(--main2-color);
+                    margin-bottom: 60px;
+                    }
+                    @media (max-width:700px) {
+                        .section-title {
+                            font-size: 32px;
+                            margin-bottom: 30px;
+                        }
+                    }
+
+
+
+                    .button {
+                        display: inline-block;
+                        background-color: var(--main2-color);
+                        color: #ffffff;
+                        padding: 0.75rem 1.4rem;
+                        border-radius: 0.5rem;
+                        transition: 0.3s;
+                        text-decoration: none;
+                        }
+                        .button:hover {
+                            background-color: #f6de64; 
+                            color: black;
+                        }
+
+/*======================================================================================*/
+
+
+
+
+/* Start Header-Top */
+.header-top {
+    position: relative;
+    margin: 0 ;
+    border-bottom: 1px solid var(--main-color) ;
+    background-color: var(--main2-color);
+    
+}
+.header-top .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-top .container a img {
+    width: 210px;
+    height: 120px;
+}
+.header-top .container form {
+    position: relative;
+}
+
+.header-top .container form .input {
+    padding: 15px 35px;
+    width: 450px;
+    background-color: white;
+    border-width: 0.5px;
+    color: #011932;
+    border: solid #011932 2px;
+    border-radius: 50px;
+    font-family: var(--heading-font);
+
+        /* -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px; */
+}
+.header-top .container form i {
+    position: absolute;
+    font-size: 20px;
+    color: #011932;
+    right: 15px;
+    top: 17px;
+}
+.header-top .container .infor {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-top .container .infor a {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.header-top .container .infor i {
+    color: var(--main-color);
+    margin-right: 10px;
+}
+.header-top .container .social i:hover {
+    color:var(--main-color);
+}
+/* Start Responsive */
+@media (max-width: 1000px) {
+    .header-top .container .infor {
+        display: none;
+    }
+    .header-top .container form .input {
+        padding: 15px 35px;
+        width: 400px;
+    }
+    @media (max-width:767px) {
+        .header-top .container form  {
+            display: none;
+        }
+        .header-top .container  {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+/* تاني هيدر */
+/* Start Header-bottom */
+.header-bottom {
+    position: sticky; 
+    top: 0; 
+    z-index: 10; 
+    padding-bottom: 10px;
+    background-color:var(--main2-color);
+
+}
+.header-bottom .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header-bottom .container .select select {
+    border: none;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+
+.header-bottom .container .select select:focus {
+    outline: none;
+}
+.header-bottom .container nav {
+    display: flex;
+    padding-top: 20px;
+}
+.header-bottom .container nav .toggle-menu {
+    font-size: 24px;
+    padding: 5px 15px;
+    border-radius: 0.5rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+    position: relative;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.header-bottom .container nav ul {
+    display: flex;
+
+}
+.header-bottom .container nav ul a {
+    margin-left: 35px;
+    color: white;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    font-size: 17px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+.header-bottom .container nav ul a.active {
+    color: var(--main-color);
+}
+.header-bottom .container nav ul a:hover {
+    color: var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+.header-bottom .container .icons {
+    display: flex;
+}
+.header-bottom .container .icons a {
+    margin-left: 25px;
+    font-size: 21px;
+    color: white;
+    position: relative;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+    padding-top: 15px;
+}
+.header-bottom .container .icons a:hover{
+    color: var(--main-color);
+}
+.header-bottom .container .icons a.shopping::after {
+    content: "03";
+    color: #011932;
+    position: absolute;
+    background-color: white;
+    font-size: 12px;
+    width: 20px;
+    text-align: center;
+    left: 15px;
+    font-weight: bold;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+/* Start Responsive */
+@media (min-width: 767px) {
+    .header-bottom .container nav .toggle-menu {
+        display: none;
+    }
+}
+@media (max-width: 992px) {
+    .header-bottom .container nav .toggle-menu {
+        display: block;
+        color: white;
+    }
+    .header-bottom .container  {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-bottom .container nav ul {
+        display: none;
+    }
+    .header-bottom .container nav .toggle-menu:hover + ul a {
+        color: #011932;
+        margin: 10px auto;
+        /* text-align: center */
+    }
+    .header-bottom .container nav .toggle-menu:hover + ul {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        top: 80px;
+        flex-direction: column;
+        text-align: center;
+        width: 25%;
+        border-radius: 0.8rem;
+        background-color: white;
+        color: var(--main-color);
+        z-index: 5;
+        padding: 10px;
+        -webkit-border-radius: 0.8rem;
+        -moz-border-radius: 0.8rem;
+        -ms-border-radius: 0.8rem;
+        -o-border-radius: 0.8rem;
+}
+    .header-bottom .container nav .toggle-menu:hover + ul li {
+        margin: 10px auto;
+    }
+    @media (max-width: 420px) {
+        .header-bottom .container nav .toggle-menu:hover + ul {
+            width: 95%;
+    }
+    }
+}
+/* End Header-bottom */
+
+
+
+
+
+
+
+/* Home Start  */
+
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 90vh; 
+    overflow: hidden;
+    background-color: var(--main2-color);
+}
+
+.home-section .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('imgs/wall2.jpg') no-repeat center center/cover;
+    filter: blur(12px); 
+    z-index: 1; 
+}
+
+.home-section .content {
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    color: white;
+    text-align: center;
+    height: 100%; 
+    padding: 20px;
+    z-index: 2; 
+}
+
+.home-section .content .logo {
+    width: 165px; 
+    margin-bottom: 20px;
+}
+
+.home-section .content h1 {
+    font-size: 50px;
+    font-weight: 775;
+}
+
+.home-section .content p {
+    font-size: 22px;
+    font-weight: 450;
+    width: 85%;
+}
+.home-section .content a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 24px;
+    border: solid 2.5px white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center ;
+    gap: 5px;
+}
+.home-section .content a:hover {
+    color: rgb(239, 194, 70);
+    border: solid 2.5px white;
+}
+
+
+
+@media (max-width: 568px) {
+    .home-section .content .logo {
+        width: 130px; 
+    }
+    .home-section .content h1 {
+        font-size: 27px;
+        font-weight: 680;
+    }
+    .home-section .content p {
+        font-size: 14px;
+        font-weight: 400;
+        width: 95%;
+    }
+    .home-section .content a {
+        color: white;
+        padding: 5px 20px;
+        border: solid 2px;
+        border-radius: 25px;
+        text-decoration: none;
+    
+        display: flex;
+        align-items: center ;
+        gap: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+/*========== ABOUT ==========*/
+
+.about-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.about-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-bottom: 80px;
+} 
+
+.about-data {
+    max-width: 100% ;
+    width: 650px;
+}
+
+@media screen and (max-width: 750px) {
+
+    .about-section .container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-img {
+        padding-top: 60px;
+        width: 260px;
+        margin-top: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+/* Start Services */
+.services {
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.services .text {
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+    color: rgb(0, 0, 0);
+}
+.services .text h2 , span {
+    font-size: 50px;
+}
+.services .text h2 span {
+    color: var(--main2-color);
+    font-size: 50px;
+}
+.services .container .box-holder {
+    display: grid;
+    grid-template-columns: repeat(3,350px);
+    justify-content: center;
+}
+.services .container .box-holder .box {
+        box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.30);
+        width: 300px;
+        height: 280px;
+        margin: 30px;
+        text-align: center;
+        transition: var(--main-transition);
+        -webkit-transition: var(--main-transition);
+        -moz-transition: var(--main-transition);
+        -ms-transition: var(--main-transition);
+        -o-transition: var(--main-transition);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        border-radius: 25px;
+}
+.services .container .box:hover {
+    background-color: var(--main2-color);
+    color: #ffffff;
+}
+.services .container .box img {
+    width: 100px;
+    padding: 20px;
+}
+.services .container .box h2 {
+    font-size: 20px;
+}
+.services .container .box p {
+    padding: 30px;
+}
+/* Start Responsive */
+@media (max-width: 768px) {
+    .services .container .box-holder {
+        flex-direction: column;
+    }
+    .services .container .box-holder .box {
+        width: 95%;
+        margin: auto;
+}
+}
+@media (max-width:768px) {
+    .services .container .box-holder {
+        display:grid ;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+        gap: 15px;
+    }
+    .services .container .box-holder .box {
+        width: 150px;
+        height: 160px;
+        
+    }
+    .services .container .box img {
+        width: 50px;
+        padding: 10px;
+    }
+    .services .container .box h2 {
+        font-size: 13px;
+    }
+    .services .container .box p {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+@media (max-width:1000px) and (min-width:768px) {
+    .services .container .box-holder {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+
+    }
+    .services .container .box-holder .box {
+        width: 250px;
+        height: 260px;
+    }
+    .services .container .box img {
+        width: 50px;
+        padding: 10px;
+    }
+    .services .container .box h2 {
+        font-size: 22px;
+    }
+    .services .container .box p {
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+/* End Responsive */
+/* End Services */
+
+
+
+
+
+/*======================================================================================*/
+
+
+
+
+
+
+.menu-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+.menu-title {
+    color: var(--main2-color);
+    text-align: center;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+
+.menu-container {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 80%;
+        margin: 0 auto;
+        justify-content: center;
+}
+
+
+.menu-card {
+    /* border: solid 3px rgb(155, 155, 155);
+    border-radius: 25px; */
+position: relative;
+display: flex;
+flex-direction: column;
+background-color: #ffffff;
+border-radius: 0.7rem;
+box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+padding: 0.5rem;
+transition: 0.5s;
+}
+.menu-card:hover {
+    transform: translateY(-30px);
+}
+
+
+.menu__img {  
+width: 85px;
+align-self: center;
+margin-bottom: 1rem;
+
+transition: 0.5s;
+}
+.menu__img:hover {
+    transform: translateY(-30px);
+}
+
+
+.menu-name {
+font-size: 15px;
+font-weight: 600;
+color: #000000;
+}
+
+
+.menu-detail {
+margin-bottom: 0.5rem;
+font-size: 13px;
+color: rgb(163, 163, 163);
+}
+
+.menu-price {
+    font-weight: 600;
+    color: #000000;
+    font-size: 13px;
+    }
+
+
+.menu__button {
+position: absolute;
+background-color: var(--main2-color);
+color: #ffffff;
+bottom: 0;
+right: 0;
+display: flex;
+padding: 0.5rem 0.813rem;
+border-radius: 0.5rem 0 0.5rem 0;
+text-decoration: none;
+}
+
+.menu-more {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.menu-more-button {
+    text-decoration: none;
+    background-color: var(--main2-color);
+    color: white;
+    padding: 8px 20px;
+    border: #069C54;
+    border-radius: 20px;
+}
+
+/*===== For PC =====*/
+@media screen and (min-width: 1212px) {
+.menu-container {
+    grid-template-columns: repeat(4, 250px);
+    column-gap: 4rem;
+}
+.menu-card {
+    padding: 1.5rem;
+}
+.menu__img {
+    width: 125px;
+}
+}
+
+/*===== For PC =====*/
+@media screen and (max-width: 1211px) and (min-width: 785px) {
+.menu-container {
+    grid-template-columns: repeat(3, 220px);
+    column-gap: 4rem;
+}
+
+.menu-card {
+    padding: 1.5rem;
+}
+
+.menu__img {
+    width: 125px;
+}
+}
+
+/*End Menu*/
+/*----------------------------------------------------------*/
+
+
+
+.staff-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin-inline: auto;
+    gap: 1rem;
+
+}
+
+
+
+.staff-section .staff-img {
+    border-radius: 50%;
+
+        width: 150px;
+        height: 150px;
+
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.staff-section .card {
+    padding: 1.875em 1.25em;
+    max-width: 13.75rem;
+    width: 100%;
+    height: 280px;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    border: solid var(--main2-color) 1.7px ;
+    border-radius: 25px;
+}
+.staff-section .card:hover {
+    cursor: pointer;
+    background-color: #d7d7d7;
+
+}
+
+.staff-section .card h2 {
+    color: var(--main2-color);
+    letter-spacing: 0.05rem;
+    font-size: 22px;
+    margin-top: 0.625em;
+    margin-bottom: 0.188em;
+}
+.staff-section .card p {
+    color: #000000;
+    font-size: clamp(0.8rem, 0.7625rem + 0.1875vw, 0.95rem);
+}
+
+.staff-section .card-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,250px);
+    gap: 2rem;
+}
+
+
+@media (max-width:1080px) {
+    .staff-section .card-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,220px);
+    gap: 1rem;
+}
+}
+@media (max-width:800px) {
+    .staff-section .card-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.staff-section .staff-img {
+        width: 100px;
+        height: 100px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contact-title{
+    font-size: 45px;
+    color: var(--main2-color);
+    margin-bottom: 20px;
+}
+
+.contact-subtitle{
+    font-size: 20px;
+    display: block;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact-description {
+    font-size: 20px;
+    width: 80%;
+}
+
+    .contact__container{
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    display: grid;
+    gap: 1.5rem;
+    }
+    .contact__button{
+    justify-self: end;
+    }
+/*========== MEDIA QUERIES ==========*/
+@media screen and (max-width: 576px){
+    .contact__container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact__data{
+        text-align: center;
+        justify-items: center;
+    }
+    .contact-title {
+        font-size: 38px;
+    }
+    .contact-subtitle {
+        font-size: 18px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hr1 {
+    background-color: var(--main2-color);
+    margin-right: 100px;
+    margin-left: 100px;
+    height: 2.5px;
+}
